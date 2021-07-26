@@ -1,0 +1,104 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@500&display=swap');
+*{
+    font-family: 'Quicksand', sans-serif;
+    
+    
+}
+
+.bg-image{
+    background-image: url(../images/clouds.jpg);
+    background-size: cover;
+    height: 70vh;
+    border:none;
+}
+.topic{
+    text-align: center;
+    color: blanchedalmond;
+}
+.icon{
+    height: 15vh;
+}
+.footer{
+    position: absolute;
+    bottom: 5vh;
+}
+
+input{
+    background: none;
+    border: none;
+    border-bottom: 2px solid;
+    font-size: 20px;
+}
+input:focus, textarea:focus, select:focus{
+    outline: none;
+}
+
+.error-msg{
+    font-size: 20px;
+    font-weight: 600;
+    /* color: #EABB50; */
+    color: rgba(161, 26, 26, 0.849);
+    
+}
+
+
+.custom-button{
+    background-color: #1F1E22;
+    border: none;
+    color: white;
+    transition: 0.5s;
+}
+.custom-button:hover{
+    background-color: #803728;
+    color: white;
+    box-shadow: 10px 10px 35px #D2763B;
+}
+.cityName{
+    position: absolute;
+    top: 11vh;
+    color: blanchedalmond;
+    font-weight: 700;
+}
+
+.weather{
+    text-align: end;
+    font-size: 23px;
+    font-weight: 600;
+    color: rgba(0, 0, 0, 0.616);
+}
+
+.section2{
+    height: 70vh;
+    background-color: rgba(235, 178, 78, 0.089);
+}
+.degree{
+    font-size: 4rem;
+    font-weight: 700;
+    color: rgba(0, 0, 0, 0.616);
+}
+
+.date{
+    font-weight: 700;
+    color: blanchedalmond;
+}
+
+.timeZone{
+    font-size: 20px;
+    color: blanchedalmond;
+}
+.detailedReport{
+    height: 50vh;
+    overflow: auto;
+}
+
+.detailedReport::-webkit-scrollbar {
+    width: 5px;
+  }
+.detailedReport::-webkit-scrollbar-thumb {
+    background: #C28046; 
+    border-radius: 10px;
+  }
+input::placeholder{
+    color: rgba(255, 255, 255, 0.411);
+}
