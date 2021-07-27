@@ -1,0 +1,157 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@500&display=swap');
+*{
+    font-family: 'Quicksand', sans-serif;
+    
+    
+}
+
+.bg-image{
+    background-image: url(../images/clouds.jpg);
+    background-size: cover;
+    height: 70vh;
+    border:none;
+}
+.topic{
+    text-align: center;
+    color: blanchedalmond;
+}
+.icon{
+    height: 14vh;
+}
+.footer{
+    position: absolute;
+    bottom: 3vh;
+}
+
+input{
+    background: none;
+    border: none;
+    border-bottom: 2px solid;
+    font-size: 20px;
+}
+input:focus, textarea:focus, select:focus{
+    outline: none;
+}
+
+.error-msg{
+    font-size: 20px;
+    font-weight: 600;
+    /* color: #EABB50; */
+    color: rgba(161, 26, 26, 0.849);
+    
+}
+
+
+.custom-button{
+    background-color: #1F1E22;
+    border: none;
+    color: white;
+    transition: 0.5s;
+}
+.custom-button:hover{
+    background-color: #803728;
+    color: white;
+    box-shadow: 10px 10px 35px #D2763B;
+}
+.cityName{
+    color: blanchedalmond;
+    font-weight: 700;
+}
+
+.weather{
+    text-align: right;
+    font-size: 30px;
+    font-weight: 600;
+    color: rgba(0, 0, 0, 0.616);
+}
+
+.section2{
+    height: 70vh;
+    background-color: rgba(235, 178, 78, 0.089);
+}
+.degree{
+    font-size: 5rem;
+    font-weight: 700;
+    color: rgba(0, 0, 0, 0.616);
+}
+
+.date{
+    font-weight: 700;
+    color: blanchedalmond;
+}
+
+.timeZone{
+    font-size: 20px;
+    color: blanchedalmond;
+}
+.detailedReport{
+    height: 50vh;
+    overflow: auto;
+}
+
+.detailedReport::-webkit-scrollbar {
+    width: 5px;
+  }
+.detailedReport::-webkit-scrollbar-thumb {
+    background: #C28046; 
+    border-radius: 10px;
+  }
+input::placeholder{
+    color: rgba(255, 255, 255, 0.411);
+}
+@media only screen and (max-width: 426px) {
+
+    .section2, .bg-image{
+        height: 50vh;
+    }
+    .degree{
+        font-size: 4rem;
+    }
+    .icon{
+        height: 13vh;
+    }
+    .weather{
+        font-size: 27px;
+    }
+    .detailedReport{
+        height: 25vh;
+    }
+    .footer{
+        position: absolute;
+        bottom: 1vh;
+    }
+    .cityName{
+        position: absolute;
+        bottom: -1vh;
+    }
+   
+  }
+  @media only screen and (max-width: 321px) {
+
+    .section2, .bg-image{
+        height: 50vh;
+    }
+    .degree{
+        font-size: 2rem;
+    }
+    .weather{
+        font-size: 17px;
+    }
+    .detailedReport{
+        height: 25vh;
+    }
+    .footer{
+        position: absolute;
+        bottom: 1vh;
+    }
+    .cityName{
+        /* position: absolute; */
+        /* bottom: -1vh; */
+        font-size: 18px;
+    }
+    .icon{
+        height: 7vh;
+    }
+   
+  }
